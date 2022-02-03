@@ -1,9 +1,6 @@
 package techpalace
 
-import (
-	"strconv"
-	"strings"
-)
+import "strings"
 
 // WelcomeMessage returns a welcome message for the customer.
 func WelcomeMessage(customer string) string {
@@ -14,9 +11,9 @@ func WelcomeMessage(customer string) string {
 func AddBorder(welcomeMsg string, numStarsPerLine int) string {
 	stars := strings.Repeat("*", numStarsPerLine)
 	return stars + "\n" + welcomeMsg + "\n" + stars
-
+}
 
 // CleanupMessage cleans up an old marketing message.
 func CleanupMessage(oldMsg string) string {
-		return strings.TrimSpace(strings.ReplaceAll(oldMsg, "*", ""))
+	return strings.TrimSpace(strings.ReplaceAll(oldMsg, "*", ""))
 }
