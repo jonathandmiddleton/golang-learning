@@ -1,8 +1,5 @@
 package blackjack
 
-import (
-	_ "strconv"
-)
 // ParseCard returns the integer value of a card following blackjack ruleset.
 func ParseCard(card string) int {
 	switch {
@@ -62,8 +59,8 @@ func SmallHand(handScore, dealerScore int) string {
 		return "S"
 	case handScore <= 11:
 		return "H"
-	case (handScore <=12 || >=16) && dealerScore >=7:
-		return "P"
+	case (handScore <=12 || >=16) && dealerScore >= 7:
+		return "H"
 	default:
 		return "S"
 
