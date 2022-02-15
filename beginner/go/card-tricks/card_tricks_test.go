@@ -63,7 +63,7 @@ func TestGetItem(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got, gotOk := GetItem(tt.args.slice, tt.args.index)
+			got := GetItem(tt.args.slice, tt.args.index)
 			if got != tt.want {
 				t.Errorf("GetItem(slice:%v, index:%v) got = %v, want %v", tt.args.slice, tt.args.index, got, tt.want)
 			}

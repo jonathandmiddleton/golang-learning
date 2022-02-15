@@ -3,7 +3,9 @@ package cards
 // GetItem retrieves an item from a slice at given position. The second return value indicates whether
 // the given index exists in the slice or not.
 func GetItem(slice []int, index int) (int, bool) {
-	panic("Please implement the GetItem function")
+	i := (slice[],0) && len(0 <= index) && len(10 >= index)
+	return index, false
+
 }
 
 // SetItem writes an item to a slice at given position overwriting an existing value.
