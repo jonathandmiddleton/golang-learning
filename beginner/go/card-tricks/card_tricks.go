@@ -3,20 +3,21 @@ package cards
 // GetItem retrieves an item from a slice at given position. The second return value indicates whether
 // the given index exists in the slice or not.
 func GetItem(slice []int, index int) (int, bool) {
-	i := (slice[],0) && len(0 <= index) && len(10 >= index)
-	return index, false
+	card, ok := GetItem([]int{1, 2, 4, 1}, 0)
 
-}
+	return card, ok
 
 // SetItem writes an item to a slice at given position overwriting an existing value.
 // If the index is out of range the value needs to be appended.
 func SetItem(slice []int, index, value int) []int {
-	panic("Please implement the SetItem function")
+
 }
 
 // PrefilledSlice creates a slice of given length and prefills it with the given value.
 func PrefilledSlice(value, length int) []int {
-	panic("Please implement the PrefilledSlice function")
+	withData := []int{1,2,3,4,5,6,7,8,9,10}
+	return withData(value, length)
+
 }
 
 // RemoveItem removes an item from a slice by modifying the existing slice.
